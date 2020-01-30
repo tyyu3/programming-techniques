@@ -1,0 +1,3 @@
+[submodule "Sorting Technique/Sorting Technique/thirdparty/SQLiteCpp"]
+	path = Sorting Technique/Sorting Technique/thirdparty/SQLiteCpp
+	url = https://github.com/SRombauts/SQLiteCpp

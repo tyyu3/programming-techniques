@@ -1,12 +1,78 @@
 # ninja log v5
-0	453	602107639	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	9263545e8d7ebcc3
-453	1247	602107640	Sorting Technique/CMakeTarget.exe	c367a8549d76f7f7
-1	443	602107681	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	9263545e8d7ebcc3
-443	946	602107681	Sorting Technique/CMakeTarget.exe	c367a8549d76f7f7
-1	536	602107837	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	728203f6de6f8ca9
-536	1253	602107837	Sorting Technique/CMakeTarget.exe	c367a8549d76f7f7
-0	390	602107856	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	728203f6de6f8ca9
-390	732	602107856	Sorting Technique/CMakeTarget.exe	c367a8549d76f7f7
-1	545	602107887	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	728203f6de6f8ca9
-1	550	602107942	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	728203f6de6f8ca9
-551	852	602107942	Sorting Technique/CMakeTarget.exe	c367a8549d76f7f7
+3	628	602116329	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	6534f02a76210cfe
+36	564	602114597	thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	d88883a45a637e4b
+79	1020	602113449	thirdparty/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.obj	1d936b5b7f65f0fe
+11	561	602114597	thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	763029542765b7dd
+57	627	602114597	thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	7483229a9d5ed082
+66	560	602114597	thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	1a02fa1bb6347702
+46	579	602114597	thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	58c04e92a6743df4
+24	644	602114597	thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	c9b6bcf6d5bbc09
+1021	1137	602113449	thirdparty/SQLiteCpp/sqlite3/sqlite3.lib	984c61039c3d6b6e
+11	614	602116329	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	e912b82fedfdb89a
+644	1594	602114597	thirdparty/SQLiteCpp/SQLiteCpp.lib	fa935ceba7790146
+75	1573	0	thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint	23e9cbfd3ffce1d
+1	261	602116216	build.ninja	c62b1f8b07d2285c
+47	622	602116329	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	44667256b08420d7
+29	625	602116329	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	b9edc3f3af720f7e
+1277	1378	602115669	Sorting Technique/thirdparty/SQLiteCpp/sqlite3/sqlite3.lib	4de1a7d7208e8e7a
+19	613	602116329	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	ced7e8240cd6b805
+63	1277	602115669	Sorting Technique/thirdparty/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.obj	8dee981a7c088efe
+58	632	602116329	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	1ddbaba27ce9117
+38	644	602116329	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	298695e9ee3691a5
+644	1491	602116329	Sorting Technique/thirdparty/SQLiteCpp/SQLiteCpp.lib	3d2076f984d3d37c
+1491	1735	602116330	Sorting Technique/CMakeTarget.exe	5fc02e14c44362d9
+12	546	602116403	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	e912b82fedfdb89a
+46	552	602116403	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	44667256b08420d7
+19	553	602116403	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	ced7e8240cd6b805
+55	564	602116403	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	1ddbaba27ce9117
+2	579	602116403	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	6534f02a76210cfe
+37	598	602116403	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	298695e9ee3691a5
+28	606	602116403	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	b9edc3f3af720f7e
+606	1238	602116403	Sorting Technique/thirdparty/SQLiteCpp/SQLiteCpp.lib	3d2076f984d3d37c
+63	1489	0	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint	4caf962ee253349a
+1238	1512	602116404	Sorting Technique/CMakeTarget.exe	5fc02e14c44362d9
+54	509	602116471	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	44667256b08420d7
+32	509	602116471	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	ced7e8240cd6b805
+11	514	602116471	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	e912b82fedfdb89a
+45	524	602116471	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	b9edc3f3af720f7e
+63	543	602116471	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	1ddbaba27ce9117
+2	637	602116471	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	6534f02a76210cfe
+22	665	602116471	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	298695e9ee3691a5
+72	1448	0	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint	4caf962ee253349a
+665	1661	602116471	Sorting Technique/thirdparty/SQLiteCpp/SQLiteCpp.lib	3d2076f984d3d37c
+1661	1924	602116472	Sorting Technique/CMakeTarget.exe	5fc02e14c44362d9
+0	355	602116754	build.ninja	c62b1f8b07d2285c
+62	523	602116754	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	e912b82fedfdb89a
+32	524	602116754	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	ced7e8240cd6b805
+23	525	602116754	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	44667256b08420d7
+91	541	602116755	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	1ddbaba27ce9117
+72	611	602116755	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	b9edc3f3af720f7e
+82	646	602116755	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	298695e9ee3691a5
+10	1379	0	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint	4caf962ee253349a
+12	566	602116785	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	e912b82fedfdb89a
+19	577	602116785	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	ced7e8240cd6b805
+54	578	602116785	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	44667256b08420d7
+27	588	602116785	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	b9edc3f3af720f7e
+45	590	602116785	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	1ddbaba27ce9117
+36	609	602116785	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	298695e9ee3691a5
+609	1345	602116785	Sorting Technique/thirdparty/SQLiteCpp/SQLiteCpp.lib	3d2076f984d3d37c
+3	1397	602116785	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	6534f02a76210cfe
+63	1483	0	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint	4caf962ee253349a
+1397	1683	602116786	Sorting Technique/CMakeTarget.exe	5fc02e14c44362d9
+45	519	602116931	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	44667256b08420d7
+27	520	602116931	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	ced7e8240cd6b805
+11	520	602116931	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	e912b82fedfdb89a
+54	530	602116931	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	1ddbaba27ce9117
+36	575	602116931	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	298695e9ee3691a5
+18	605	602116931	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	b9edc3f3af720f7e
+63	1418	0	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint	4caf962ee253349a
+27	400	602116944	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Exception.cpp.obj	ced7e8240cd6b805
+46	447	602116944	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Statement.cpp.obj	1ddbaba27ce9117
+11	455	602116944	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Backup.cpp.obj	e912b82fedfdb89a
+56	456	602116944	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Transaction.cpp.obj	44667256b08420d7
+37	585	602116944	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Column.cpp.obj	b9edc3f3af720f7e
+3	617	602116944	Sorting Technique/CMakeFiles/CMakeTarget.dir/Sorting_Technique.cpp.obj	6534f02a76210cfe
+18	632	602116944	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/src/Database.cpp.obj	298695e9ee3691a5
+66	1443	0	Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint	4caf962ee253349a
+633	1454	602116944	Sorting Technique/thirdparty/SQLiteCpp/SQLiteCpp.lib	3d2076f984d3d37c
+1454	1863	602116945	Sorting Technique/CMakeTarget.exe	5fc02e14c44362d9

@@ -1,5 +1,24 @@
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/CMakeFiles/install/local.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/CMakeFiles/install.dir
 D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/CMakeFiles/list_install_components.dir
 D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/CMakeTarget.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/install/local.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/install.dir
 D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/edit_cache.dir
 D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/rebuild_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/list_install_components.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/SQLiteCpp_cpplint.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/install/local.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/install.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/edit_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/rebuild_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/CMakeFiles/list_install_components.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/sqlite3/CMakeFiles/install/local.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/sqlite3/CMakeFiles/install.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/sqlite3/CMakeFiles/edit_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/sqlite3/CMakeFiles/rebuild_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/thirdparty/SQLiteCpp/sqlite3/CMakeFiles/list_install_components.dir

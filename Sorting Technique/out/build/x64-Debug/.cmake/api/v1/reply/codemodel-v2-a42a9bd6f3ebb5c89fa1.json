@@ -1,0 +1,155 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Sorting Technique",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Sorting Technique",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Sorting Technique/thirdparty/SQLiteCpp",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "Sorting Technique/thirdparty/SQLiteCpp",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "Sorting Technique/thirdparty/SQLiteCpp/sqlite3",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Sorting Technique/thirdparty/SQLiteCpp/sqlite3",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Sorting Technique",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "SQLiteCpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "CMakeTarget::@a5b5b58e47ba6b2f3e31",
+					"jsonFile" : "target-CMakeTarget-Debug-f5a8a848ba6807e66a08.json",
+					"name" : "CMakeTarget",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SQLiteCpp::@43e87c0140690d41b3d6",
+					"jsonFile" : "target-SQLiteCpp-Debug-69397109710e48628f52.json",
+					"name" : "SQLiteCpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SQLiteCpp_cpplint::@43e87c0140690d41b3d6",
+					"jsonFile" : "target-SQLiteCpp_cpplint-Debug-f6ab3f1e4b50a93a8d0e.json",
+					"name" : "SQLiteCpp_cpplint",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sqlite3::@1ca08e5c01f99cc81c0b",
+					"jsonFile" : "target-sqlite3-Debug-35251c086b632a9b2eec.json",
+					"name" : "sqlite3",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug",
+		"source" : "D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
