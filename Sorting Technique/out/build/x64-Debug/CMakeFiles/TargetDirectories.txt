@@ -1,0 +1,5 @@
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/CMakeTarget.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/edit_cache.dir
+D:/Igor/Учеба/Университет/Методы Программирования/Labs/Sorting Technique/out/build/x64-Debug/Sorting Technique/CMakeFiles/rebuild_cache.dir
