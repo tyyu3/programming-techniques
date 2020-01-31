@@ -4,8 +4,9 @@
 #include "Sorting Technique.h"
 #include "./SQLiteCpp/SQLiteCpp.h"
 #include "CampEntry.cpp"
-#include "Selection Sort.hpp"
 #include "Insertion Sort.hpp"
+#include "Selection Sort.hpp"
+#include "Shaker Sort.hpp"
 
 std::vector<CampEntry> read_from_db(std::string database, std::string table, const size_t size)
 {
@@ -21,14 +22,14 @@ std::vector<CampEntry> read_from_db(std::string database, std::string table, con
         query.bind(1, static_cast<unsigned>(size));
         while (query.executeStep())
         {
-            std::string first_name  = query.getColumn(1);
-            std::string last_name   = query.getColumn(2);
-            int camp_year           = query.getColumn(3);
-            int b_day               = query.getColumn(4);
-            int b_month             = query.getColumn(5);
-            int b_year              = query.getColumn(6);
-            int troop               = query.getColumn(7);
-            int shift               = query.getColumn(8);
+            std::string first_name = query.getColumn(1);
+            std::string last_name = query.getColumn(2);
+            int camp_year = query.getColumn(3);
+            int b_day = query.getColumn(4);
+            int b_month = query.getColumn(5);
+            int b_year = query.getColumn(6);
+            int troop = query.getColumn(7);
+            int shift = query.getColumn(8);
             result.emplace_back(CampEntry(camp_year, troop, shift, first_name + " " + last_name, {b_day, b_day, b_year}));
         }
     }
@@ -50,7 +51,7 @@ int main()
     std::vector<CampEntry> scouts_copy;
     std::copy(scouts.begin(), scouts.end(),
         std::back_inserter(scouts_copy));
-    custom::insertion_sort(scouts_copy.begin(), scouts_copy.end(), [](const CampEntry& lhs, const CampEntry& rhs) { return lhs > rhs; });
+    custom::shaker_sort(scouts_copy.begin(), scouts_copy.end());
     for (auto i : scouts_copy)
     {
         std::cout << i << '\n';

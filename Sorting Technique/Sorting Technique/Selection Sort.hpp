@@ -11,7 +11,7 @@ namespace custom
         {
             next = std::min_element(sorted_before, end, cmp);
             if (next != sorted_before)
-                std::swap(*sorted_before, *next);
+                std::iter_swap(sorted_before, next);
             ++sorted_before;
         }
         return;

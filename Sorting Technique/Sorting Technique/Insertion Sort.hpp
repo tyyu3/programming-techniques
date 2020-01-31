@@ -12,7 +12,7 @@ namespace custom
             current = sorted_before;
             while (current != begin && cmp(*current,*(current-1)))
             {
-                std::swap(*current, *(current - 1));
+                std::iter_swap(current, (current - 1));
                 current--;
             }
             sorted_before++;
