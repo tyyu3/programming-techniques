@@ -5,6 +5,7 @@
 #include "./SQLiteCpp/SQLiteCpp.h"
 #include "CampEntry.cpp"
 #include "Selection Sort.hpp"
+#include "Insertion Sort.hpp"
 
 std::vector<CampEntry> read_from_db(std::string database, std::string table, const size_t size)
 {
@@ -40,7 +41,7 @@ std::vector<CampEntry> read_from_db(std::string database, std::string table, con
 
 int main()
 {
-    std::vector<CampEntry> scouts = read_from_db("data.sqlite", "user_details", 1000);
+    std::vector<CampEntry> scouts = read_from_db("data.sqlite", "user_details", 20);
     for (auto i : scouts)
     {
         std::cout << i << '\n';
@@ -49,7 +50,7 @@ int main()
     std::vector<CampEntry> scouts_copy;
     std::copy(scouts.begin(), scouts.end(),
         std::back_inserter(scouts_copy));
-    custom::selection_sort(scouts_copy.begin(), scouts_copy.end());
+    custom::insertion_sort(scouts_copy.begin(), scouts_copy.end(), [](const CampEntry& lhs, const CampEntry& rhs) { return lhs > rhs; });
     for (auto i : scouts_copy)
     {
         std::cout << i << '\n';
