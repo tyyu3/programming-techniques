@@ -2,9 +2,9 @@
 //
 
 #include "Sorting Technique.h"
-#include "./SQLiteCpp/SQLiteCpp.h"
 #include "CampEntry.cpp"
 #include "Insertion Sort.hpp"
+#include "SQLiteCpp/SQLiteCpp.h"
 #include "Selection Sort.hpp"
 #include "Shaker Sort.hpp"
 
@@ -42,19 +42,55 @@ std::vector<CampEntry> read_from_db(std::string database, std::string table, con
 
 int main()
 {
-    std::vector<CampEntry> scouts = read_from_db("data.sqlite", "user_details", 20);
-    for (auto i : scouts)
+    std::map<std::string, std::vector<std::int64_t>> results;
+    std::vector<size_t> sizes = {100, 11200, 22300, 33400, 44500, 55600, 66700, 77800, 88900, 100000};
+
+    std::vector<CampEntry> scouts = read_from_db("data.sqlite", "user_details", 100'000);
+
+    for (auto i : sizes)
     {
-        std::cout << i << '\n';
+        std::cout << "Timing for first " << i
+                  << " rows...\n";
+        std::vector<CampEntry> scouts_copy_selection;
+        scouts_copy_selection.reserve(i);
+        std::copy(scouts.begin(), scouts.begin() + i,
+            std::back_inserter(scouts_copy_selection));
+        std::chrono::time_point<std::chrono::high_resolution_clock> start = std::chrono::high_resolution_clock::now();
+        custom::selection_sort(scouts_copy_selection.begin(), scouts_copy_selection.end());
+        std::chrono::time_point<std::chrono::high_resolution_clock> end = std::chrono::high_resolution_clock::now();
+        results["Selection sort"].push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
+
+        std::vector<CampEntry> scouts_copy_insertion;
+        scouts_copy_insertion.reserve(i);
+        std::copy(scouts.begin(), scouts.begin() + i,
+            std::back_inserter(scouts_copy_insertion));
+        start = std::chrono::high_resolution_clock::now();
+        custom::insertion_sort(scouts_copy_insertion.begin(), scouts_copy_insertion.end());
+        end = std::chrono::high_resolution_clock::now();
+        results["Insertion sort"].push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
+
+        std::vector<CampEntry> scouts_copy_shaker;
+        scouts_copy_shaker.reserve(i);
+        std::copy(scouts.begin(), scouts.begin() + i,
+            std::back_inserter(scouts_copy_shaker));
+        start = std::chrono::high_resolution_clock::now();
+        custom::shaker_sort(scouts_copy_shaker.begin(), scouts_copy_shaker.end());
+        end = std::chrono::high_resolution_clock::now();
+        results["Shaker sort"].push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
     }
-    std::cout << "\nSorted:\n";
-    std::vector<CampEntry> scouts_copy;
-    std::copy(scouts.begin(), scouts.end(),
-        std::back_inserter(scouts_copy));
-    custom::shaker_sort(scouts_copy.begin(), scouts_copy.end());
-    for (auto i : scouts_copy)
+    std::ofstream out("timings.txt");
+    out << "# Sizes\n";
+    for (auto i : sizes)
+        out << i << ",";
+    out << '\n';
+    for (auto& i : results)
     {
-        std::cout << i << '\n';
+        out << "#" << i.first << "\n";
+        for (auto& j : i.second)
+        {
+            out << j << ",";
+        }
+        out << "\n";
     }
     return 0;
 }
