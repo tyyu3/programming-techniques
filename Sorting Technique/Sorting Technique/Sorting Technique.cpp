@@ -15,7 +15,7 @@ std::vector<CampEntry> read_from_db(std::string database, std::string table, con
     try
     {
         //Open a DB
-        SQLite::Database db("data.sqlite");
+        SQLite::Database db("./../../../../data.sqlite");
         // Create an SQL query with one parameter.
         SQLite::Statement query(db, "SELECT * FROM " + table + " LIMIT ?");
         // Set parameter to size
@@ -47,7 +47,7 @@ int main()
 
     std::vector<CampEntry> scouts = read_from_db("data.sqlite", "user_details", 100'000);
 
-    for (auto i : sizes)
+    for (size_t i : sizes)
     {
         std::cout << "Timing for first " << i
                   << " rows...\n";
@@ -78,17 +78,17 @@ int main()
         end = std::chrono::high_resolution_clock::now();
         results["Shaker sort"].push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
     }
-    std::ofstream out("timings.txt");
-    out << "# Sizes\n";
+    std::ofstream out("./../../../../timings.txt");
+    out << "Sizes";
     for (auto i : sizes)
-        out << i << ",";
+        out <<","<<i;
     out << '\n';
     for (auto& i : results)
     {
-        out << "#" << i.first << "\n";
+        out << i.first;
         for (auto& j : i.second)
         {
-            out << j << ",";
+            out << "," << j;
         }
         out << "\n";
     }

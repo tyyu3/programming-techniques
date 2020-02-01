@@ -10,12 +10,12 @@ namespace custom
         while (sorted_before != end)
         {
             current = sorted_before;
-            while (current != begin && cmp(*current,*(current-1)))
+            while (current != begin && cmp(*current,*std::prev(current)))
             {
-                std::iter_swap(current, (current - 1));
-                current--;
+                std::iter_swap(current, std::prev(current));
+                --current;
             }
-            sorted_before++;
+            ++sorted_before;
         }
         return;
     }

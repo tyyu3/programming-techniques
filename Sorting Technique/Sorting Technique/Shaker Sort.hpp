@@ -11,11 +11,11 @@ namespace custom
         while (left != right-- && swapped)
         {
             swapped = false;
-            for (auto i = left; i != right; ++i)
+            for (Iterator i = left; i != right; ++i)
             {
                 if (cmp(*(i+1), *i))
                 {
-                    std::iter_swap(i, i + 1);
+                    std::iter_swap(i, std::next(i));
                     swapped = true;
                 }
             }
@@ -23,11 +23,11 @@ namespace custom
                 break;
 
             swapped = false;
-            for (auto i = right - 1; i != left; --i)
+            for (Iterator i = right - 1; i != left; --i)
             {
-                if (cmp(*i,*(i - 1)))
+                if (cmp(*i,*std::prev(i)))
                 {
-                    std::iter_swap(i, i - 1);
+                    std::iter_swap(i, std::prev(i));
                     swapped = true;
                 }
             }
