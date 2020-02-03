@@ -15,7 +15,7 @@ std::vector<CampEntry> read_from_db(std::string database, std::string table, con
     try
     {
         //Open a DB
-        SQLite::Database db("./../../../../data.sqlite");
+        SQLite::Database db("./../../../../" + database);
         // Create an SQL query with one parameter.
         SQLite::Statement query(db, "SELECT * FROM " + table + " LIMIT ?");
         // Set parameter to size
