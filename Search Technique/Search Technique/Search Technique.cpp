@@ -1,7 +1,6 @@
 ﻿#include "Search Technique.h"
 #include "CampEntry.cpp"
 #include "LinearSearch.hpp"
-#include "LinearSearchTest.hpp"
 #include "SQLiteCpp/SQLiteCpp.h"
 
 using namespace std;
@@ -40,10 +39,6 @@ std::vector<CampEntry> read_from_db(std::string database, std::string table, con
 
 int main()
 {
-#ifndef  NDEBUG
-    linear::test_linear();
-#endif // ! NDEBUG
-
     std::vector<size_t> sizes = {100, 11200, 22300, 33400, 44500, 55600, 66700, 77800, 88900, 100000};
     std::vector<CampEntry> scouts = read_from_db("data.sqlite", "user_details", 100);
     for (auto& i : scouts)
