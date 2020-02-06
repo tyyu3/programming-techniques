@@ -1,3 +1,6 @@
 [submodule "Sorting Technique/Sorting Technique/thirdparty/SQLiteCpp"]
 	path = thirdparty/SQLiteCpp
 	url = https://github.com/SRombauts/SQLiteCpp/tree/5fd6b9c9b337663a7879d35b2a611d8b2c05717e
+[submodule "googletest"]
+	path = googletest
+	url = https://github.com/google/googletest.git
