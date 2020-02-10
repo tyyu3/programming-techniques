@@ -1,7 +1,7 @@
 ﻿#include "Search Technique.h"
 #include "CampEntry.cpp"
 #include "LinearSearch.hpp"
-#include "LinearSearchTest.hpp"
+#include "SearchTests.hpp"
 #include "SQLiteCpp/SQLiteCpp.h"
 
 using namespace std;
@@ -42,6 +42,7 @@ int main()
 {
 #ifndef  NDEBUG
     linear::test_linear();
+    binary::test_binary();
 #endif // ! NDEBUG
 
     std::vector<size_t> sizes = {100, 11200, 22300, 33400, 44500, 55600, 66700, 77800, 88900, 100000};
