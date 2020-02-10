@@ -26,7 +26,9 @@ namespace linear
         auto res = custom::linear_search(vec.begin(), vec.end(), tofind);
         ASSERT_EQUAL(* *res.begin(), *vec.begin());
         ASSERT_EQUAL(* *(res.end()-1), *(vec.end()-1));
-
+        res = custom::linear_search(vec.begin(), vec.end(), "mike koos", [](CampEntry lhs, std::string rhs){
+        return lhs.name() == rhs;});
+        ASSERT_EQUAL((*res[0]).year(),1956);
     }
 
     int test_linear()

@@ -1,8 +1,12 @@
 ﻿#include "Search Technique.h"
 #include "CampEntry.cpp"
 #include "LinearSearch.hpp"
-#include "SearchTests.hpp"
 #include "SQLiteCpp/SQLiteCpp.h"
+
+#ifndef NDEBUG
+#include "SearchTests.hpp"
+#endif // NDEBUG
+
 
 using namespace std;
 
@@ -43,16 +47,44 @@ int main()
 #ifndef  NDEBUG
     linear::test_linear();
     binary::test_binary();
-#endif // ! NDEBUG
-
+#endif // NDEBUG
+    std::map<std::string, std::vector<std::int64_t>> results;
     std::vector<size_t> sizes = {100, 11200, 22300, 33400, 44500, 55600, 66700, 77800, 88900, 100000};
     std::vector<CampEntry> scouts = read_from_db("data.sqlite", "user_details", 100);
-    for (auto& i : scouts)
+    //timings
+    /*for (size_t i : sizes)
     {
-       std::cout << i << '\n';
+        std::cout << "Timing for first " << i
+                  << " rows...\n";
+        std::chrono::time_point<std::chrono::high_resolution_clock> start = std::chrono::high_resolution_clock::now();
+        custom::linear_search(scouts.begin(), scouts.end(), );
+        std::chrono::time_point<std::chrono::high_resolution_clock> end = std::chrono::high_resolution_clock::now();
+        results["Selection sort"].push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
+
+        std::vector<CampEntry> scouts_copy_insertion;
+        scouts_copy_insertion.reserve(i);
+        std::copy(scouts.begin(), scouts.begin() + i,
+            std::back_inserter(scouts_copy_insertion));
+        start = std::chrono::high_resolution_clock::now();
+        custom::insertion_sort(scouts_copy_insertion.begin(), scouts_copy_insertion.end());
+        end = std::chrono::high_resolution_clock::now();
+        results["Insertion sort"].push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
     }
-    CampEntry ce(1944, 4, 2, "mike brooks", {18,18,1929});
-    //std::cout << ce << endl;
-    std::cout << "Hello CMake." << endl;
+    //reuslts
+    std::ofstream out("./../../../../timings.txt");
+    out << "Sizes";
+    for (auto i : sizes)
+        out << "," << i;
+    out << '\n';
+    for (auto& i : results)
+    {
+        out << i.first;
+        for (auto& j : i.second)
+        {
+            out << "," << j;
+        }
+        out << "\n";
+    }
+       */
     return 0;
 }

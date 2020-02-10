@@ -30,6 +30,9 @@ namespace binary
         auto res = custom::binary_search(vec.begin(), vec.end(), tofind);
         ASSERT_EQUAL(* *res.begin(), *vec.begin());
         ASSERT_EQUAL(* *(res.end()-1), *(vec.end()-2));
+        res = custom::binary_search(
+            vec.begin(), vec.end(), "mike koos", [](std::string lhs, std::string rhs) { return lhs < rhs; }, [](const CampEntry& elem) { return elem.name(); });
+        ASSERT_EQUAL((*res[0]).year(),1956);
 
     }
 
