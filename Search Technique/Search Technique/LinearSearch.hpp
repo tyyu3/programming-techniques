@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 namespace custom
 {
     template <typename Iterator, typename Key, typename BinaryPredicate>

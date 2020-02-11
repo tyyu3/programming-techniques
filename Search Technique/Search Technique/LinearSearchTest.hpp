@@ -30,6 +30,16 @@ namespace linear
         return lhs.name() == rhs;});
         ASSERT_EQUAL((*res[0]).year(),1956);
     }
+    void test_size()
+    {
+        std::vector<CampEntry> vec = {{1945, 4, 2, "mike brooks", {18, 18, 1929}}, {1956, 4, 2, "mike koos", {18, 18, 1929}}, {1944, 4, 2, "mike brooks", {18, 18, 1929}}};
+        auto res = custom::linear_search(vec.begin(), vec.end(), "mike koos", [](CampEntry lhs, std::string rhs) { return lhs.name() == rhs; });
+        ASSERT_EQUAL(res.size(), 1);
+        res = custom::linear_search(vec.begin(), vec.end(), "mike koosy", [](CampEntry lhs, std::string rhs) { return lhs.name() == rhs; });
+        ASSERT_EQUAL(res.size(), 0);
+        res = custom::linear_search(vec.begin(), vec.end(), "mike brooks", [](CampEntry lhs, std::string rhs) { return lhs.name() == rhs; });
+        ASSERT_EQUAL(res.size(), 2);
+    }
 
     int test_linear()
     {
@@ -37,6 +47,7 @@ namespace linear
         RUN_TEST(tr, test_basic);
         RUN_TEST(tr, test_multiple);
         RUN_TEST(tr, test_class);
+        RUN_TEST(tr, test_size);
         return 0;
     }
 }

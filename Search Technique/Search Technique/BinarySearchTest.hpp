@@ -35,6 +35,24 @@ namespace binary
         ASSERT_EQUAL((*res[0]).year(),1956);
 
     }
+    void test_size()
+    {
+        std::vector<CampEntry> vec =
+        {{1941, 4, 2, "mike brooks", {18, 18, 1929}},
+        {1956, 4, 2, "mike koos", {18, 18, 1929}},
+        {1942, 4, 2, "mike brooks", {18, 18, 1929}},
+        {1943, 4, 2, "mike brooks", {18, 18, 1929}}};
+        std::sort(vec.begin(), vec.end());
+        auto res = custom::binary_search(
+            vec.begin(), vec.end(), "mike koos", [](std::string lhs, std::string rhs) { return lhs < rhs; }, [](const CampEntry& elem) { return elem.name(); });
+        ASSERT_EQUAL(res.size(), 1);
+        res = custom::binary_search(
+            vec.begin(), vec.end(), "mike koosy", [](std::string lhs, std::string rhs) { return lhs < rhs; }, [](const CampEntry& elem) { return elem.name(); });
+        ASSERT_EQUAL(res.size(), 0);
+        res = custom::binary_search(
+            vec.begin(), vec.end(), "mike brooks", [](std::string lhs, std::string rhs) { return lhs < rhs; }, [](const CampEntry& elem) { return elem.name(); });
+        ASSERT_EQUAL(res.size(), 3);
+    }
 
     int test_binary()
     {
@@ -42,6 +60,7 @@ namespace binary
         RUN_TEST(tr, test_basic);
         RUN_TEST(tr, test_multiple);
         RUN_TEST(tr, test_class);
+        RUN_TEST(tr, test_size);
         return 0;
     }
 }
