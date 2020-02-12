@@ -8,7 +8,7 @@
 #ifndef NDEBUG
 #include "SearchTests.hpp"
 #endif // NDEBUG
-constexpr uint64_t namecount = 1;
+constexpr uint64_t namecount = 5;
 static std::mt19937 prng(std::random_device {}());
 
 std::vector<std::string> select_random_names(std::vector<CampEntry>::iterator begin, std::vector<CampEntry>::iterator end, int number)
@@ -79,7 +79,7 @@ int main()
         std::cout << "Timing for first " << i
                   << " rows...\n";
         //Linear Search
-        std::vector<std::int64_t> timings;
+        std::vector<std::int64_t> timings, timings2;
         for (std::string name : names)
         {
             std::chrono::time_point<std::chrono::high_resolution_clock> start = std::chrono::high_resolution_clock::now();
@@ -135,15 +135,18 @@ int main()
             std::vector<std::multimap<std::string, CampEntry>::iterator> found;
             std::chrono::time_point<std::chrono::high_resolution_clock> start = std::chrono::high_resolution_clock::now();
             auto range = m_map.equal_range(name);
+            std::chrono::time_point<std::chrono::high_resolution_clock> middle = std::chrono::high_resolution_clock::now();
             for (auto it = range.first; it != range.second; ++it)
             {
                 found.push_back(it);
             }
             std::chrono::time_point<std::chrono::high_resolution_clock> end = std::chrono::high_resolution_clock::now();
             timings.push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
+            timings2.push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(middle - start).count());
             found.clear();
         }
-        results["Multimap"].push_back(std::accumulate(timings.begin(), timings.end(), (std::int64_t)0) / namecount);
+        results["Multimap w. vector"].push_back(std::accumulate(timings.begin(), timings.end(), (std::int64_t)0) / namecount);
+        results["Multimap"].push_back(std::accumulate(timings2.begin(), timings2.end(), (std::int64_t)0) / namecount);
     }
 
     //reuslts
