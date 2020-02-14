@@ -1,17 +1,19 @@
 #pragma once
 #include "CampEntry.hpp"
+#include <functional>
 
 class CampEntryHash : public CampEntry
 {
 public:
-    CampEntryHash(Year year, Troop troop, Shift shift, Name name, Bday bday, size_t (*hash_func)(CampEntry))
+    using HashFunction = std::function<size_t(CampEntry)>;
+    CampEntryHash(Year year, Troop troop, Shift shift, Name name, Bday bday, HashFunction h_f)
         : CampEntry(year, troop, shift, name, bday)
-        , hash_function(hash_func)
+        , hash_function {std::move(h_f)}
     {
         hash_ = hash_function(*this);
     }
 
-    size_t (*hash_function)(CampEntry);
+    HashFunction hash_function;
     [[nodiscard]] size_t hash() const { return hash_; }
 
 private:
