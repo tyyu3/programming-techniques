@@ -12,9 +12,9 @@ public:
     {
         hash_ = hash_function(*this);
     }
-
     HashFunction hash_function;
-    [[nodiscard]] size_t hash() const { return hash_; }
+    [[nodiscard]] size_t hash() const { return hash_; };
+    friend std::ostream& operator<<(std::ostream& stream, const CampEntryHash& campentry);
 
 private:
     size_t hash_;

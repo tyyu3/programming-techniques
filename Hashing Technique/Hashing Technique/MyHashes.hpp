@@ -21,8 +21,26 @@ public:
     }
     size_t bad_hash(std::string const& s)
     {
+        size_t hash = 0;
 
-        return 0;
+        for (char c : s)
+        {
+            hash += c;
+        }
+
+        return hash;
+    }
+    size_t rot13_hash(std::string const& s)
+    {
+        size_t hash = 0;
+
+        for (char c : s)
+        {
+            hash += c;
+            hash -= (hash << 13) | (hash >> 19);
+        }
+
+        return hash;
     }
     size_t better_hash(std::string const& s)
     {
