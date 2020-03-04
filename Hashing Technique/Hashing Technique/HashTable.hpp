@@ -11,25 +11,26 @@ template <typename Key, typename T>
 class HashTable
 {
 public:
-    using HashFunction = std::function<size_t(Key)>;
+    using HashFunction = std::function<size_t(const Key)>;
     HashTable(HashFunction h_f)
         : hash_function(h_f)
     {
     }
-    std::list<T> get(const Key& key)
+    const std::list<T>&  get(const Key& key)
     {
         size_t hash = hash_function(key);
         if (table.at(hash % table.size()).empty())
         {
-            return {};
+            return empty_list;
         }
-        Bucket& bucket = table[hash % table.size()];
+
+        Bucket& bucket = table.at(hash % table.size());
         for (SameName& sn : bucket)
         {
             if (sn.first == key)
                 return sn.second;
         }
-        return {};
+        return empty_list;
     }
 
     void emplace(const Key& key, T val)
@@ -41,7 +42,6 @@ public:
     {
         size_t hash = hash_function(key);
         Bucket& bucket = table[hash % table.size()];
-        bool emplaced = false;
         for (SameName& sn : bucket)
         {
             if (sn.first == key)
@@ -66,6 +66,22 @@ public:
         }
     }
 
+    size_t count_collisions() const 
+    {
+        size_t res = 0;
+        for (Bucket& bucket : table)
+        {
+            size_t s = bucket.size();
+            if (s > 1)
+            {
+                res += s;
+            }
+        }
+        return res;
+    }
+
+private:
+    static inline std::list<T> empty_list{};
     void rehash()
     {
 
@@ -92,29 +108,12 @@ public:
                 new_table.emplace(sn.first, sn.second);
         std::swap(*this, new_table);
     }
-    size_t size()
-    {
-        return table.size();
-    }
 
-    size_t count_collisions()
-    {
-        size_t res = 0;
-        for (Bucket& bucket : table)
-        {
-            size_t s = bucket.size();
-            if (s > 1)
-            {
-                res += s;
-            }
-        }
-        return res;
-    }
-
-private:
     using SameName = std::pair<Key, std::list<T>>;
     using Bucket = std::list<SameName>;
     std::vector<Bucket> table = std::vector<Bucket>(11);
+
+    
 
     size_t max_bucket = 3;
     size_t buckets_taken = 0;

@@ -138,22 +138,22 @@ int main()
         {
             //Bad hash
             std::chrono::time_point<std::chrono::high_resolution_clock> start = std::chrono::high_resolution_clock::now();
-            auto res1 = table_bad_hash.get(name);
+            auto& res1 = table_bad_hash.get(name);
             std::chrono::time_point<std::chrono::high_resolution_clock> end = std::chrono::high_resolution_clock::now();
             timings_bad_hash.push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
             //Rot13 hash
             start = std::chrono::high_resolution_clock::now();
-            auto res2 = table_rot13.get(name);
+            auto& res2 = table_rot13.get(name);
             end = std::chrono::high_resolution_clock::now();
             timings_rot13.push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
             //Rot19 hash
             start = std::chrono::high_resolution_clock::now();
-            auto res3 = table_rot19.get(name);
+            auto& res3 = table_rot19.get(name);
             end = std::chrono::high_resolution_clock::now();
             timings_rot19.push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
             //Better hash
             start = std::chrono::high_resolution_clock::now();
-            auto res4 = table_better_hash.get(name);
+            auto& res4 = table_better_hash.get(name);
             end = std::chrono::high_resolution_clock::now();
             timings_better_hash.push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count());
         }
