@@ -16,6 +16,21 @@ public:
         : hash_function(h_f)
     {
     }
+    std::list<T> get(const Key& key)
+    {
+        size_t hash = hash_function(key);
+        if (table.at(hash % table.size()).empty())
+        {
+            return {};
+        }
+        Bucket& bucket = table[hash % table.size()];
+        for (SameName& sn : bucket)
+        {
+            if (sn.first == key)
+                return sn.second;
+        }
+        return {};
+    }
 
     void emplace(const Key& key, T val)
     {
@@ -58,7 +73,7 @@ public:
         if (buckets_taken * 5 > table.size())
         {
             new_size = table.size() * 2;
-            new_max_bucket = 10;
+            new_max_bucket = 3;
         }
         else
         {
@@ -68,6 +83,7 @@ public:
 #ifndef NDEBUG
         std::cerr << "Rehash: " << table.size() << ", " << max_bucket
                   << " --> " << new_size << ", " << new_max_bucket << std::endl;
+#endif // !NDEBUG
         HashTable new_table(hash_function);
         new_table.max_bucket = new_max_bucket;
         new_table.table.resize(new_size);
@@ -75,8 +91,24 @@ public:
             for (SameName& sn : bucket)
                 new_table.emplace(sn.first, sn.second);
         std::swap(*this, new_table);
-#endif // !NDEBUG
-    
+    }
+    size_t size()
+    {
+        return table.size();
+    }
+
+    size_t count_collisions()
+    {
+        size_t res = 0;
+        for (Bucket& bucket : table)
+        {
+            size_t s = bucket.size();
+            if (s > 1)
+            {
+                res += s;
+            }
+        }
+        return res;
     }
 
 private:
@@ -84,7 +116,7 @@ private:
     using Bucket = std::list<SameName>;
     std::vector<Bucket> table = std::vector<Bucket>(11);
 
-    size_t max_bucket = 10;
+    size_t max_bucket = 3;
     size_t buckets_taken = 0;
 
     HashFunction hash_function;

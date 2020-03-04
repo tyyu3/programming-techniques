@@ -4,5 +4,10 @@
 #pragma once
 
 #include <iostream>
-
+#include <algorithm>
+#include <chrono>
+#include <fstream>
+#include <iomanip>
+#include <random>
+#include <numeric>
 // TODO: Reference additional headers your program requires here.

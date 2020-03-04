@@ -42,6 +42,18 @@ public:
 
         return hash;
     }
+    size_t rot19_hash(std::string const& s)
+    {
+        size_t hash = 0;
+
+        for (char c : s)
+        {
+            hash += c;
+            hash -= (hash << 19) | (hash >> 43);
+        }
+
+        return hash;
+    }
     size_t better_hash(std::string const& s)
     {
         size_t hash = 0;
@@ -70,7 +82,7 @@ public:
     }
 
 private:
-    const int max_power = 27;
+    const int max_power = 35;
     int p_;
     int modulo_;
     std::vector<int64_t> p_powers;
