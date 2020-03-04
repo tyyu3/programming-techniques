@@ -70,7 +70,7 @@ public:
     {
 
         std::size_t new_size, new_max_bucket;
-        if (buckets_taken * 5 > table.size())
+        if (buckets_taken * 7 > table.size())
         {
             new_size = table.size() * 2;
             new_max_bucket = 3;
