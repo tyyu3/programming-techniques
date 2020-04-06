@@ -1,0 +1,140 @@
+\doxysection{custom Namespace Reference}
+\label{namespacecustom}\index{custom@{custom}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Iterator , typename Comparator $>$ }\\void \textbf{ insertion\+\_\+sort} (Iterator begin, Iterator end, Comparator cmp)
+\item 
+{\footnotesize template$<$typename Iterator $>$ }\\void \textbf{ insertion\+\_\+sort} (Iterator begin, Iterator end)
+\item 
+{\footnotesize template$<$typename Iterator , typename Comparator $>$ }\\void \textbf{ selection\+\_\+sort} (Iterator begin, Iterator end, Comparator cmp)
+\item 
+{\footnotesize template$<$typename Iterator $>$ }\\void \textbf{ selection\+\_\+sort} (Iterator begin, Iterator end)
+\item 
+{\footnotesize template$<$typename Iterator , typename Comparator $>$ }\\void \textbf{ shaker\+\_\+sort} (Iterator begin, Iterator end, Comparator cmp)
+\item 
+{\footnotesize template$<$typename Iterator $>$ }\\void \textbf{ shaker\+\_\+sort} (Iterator begin, Iterator end)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{namespacecustom_a95fbc8702150a1712043e2b0b3fa2d2e}} 
+\index{custom@{custom}!insertion\_sort@{insertion\_sort}}
+\index{insertion\_sort@{insertion\_sort}!custom@{custom}}
+\doxysubsubsection{insertion\_sort()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Iterator $>$ \\
+void custom\+::insertion\+\_\+sort (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end }\end{DoxyParamCaption})}
+
+Реализует простую сортировку вставками диапазона элементов 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator} & Iterator тип, удовлетворяющий Legacy\+Bidirectional\+Iterator и $\ast$\+Iterator должен быть Swappable \\
+\hline
+{\em Comparator} & тип, удовлетворяющий C++ named requirement Compare \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em begin,end} & итераторы, указывающие на диапазон, который требуется отсортировать \\
+\hline
+\end{DoxyParams}
+\mbox{\label{namespacecustom_a2c0fd5533534dfe222a2fc808f1a385b}} 
+\index{custom@{custom}!insertion\_sort@{insertion\_sort}}
+\index{insertion\_sort@{insertion\_sort}!custom@{custom}}
+\doxysubsubsection{insertion\_sort()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Iterator , typename Comparator $>$ \\
+void custom\+::insertion\+\_\+sort (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end,  }\item[{Comparator}]{cmp }\end{DoxyParamCaption})}
+
+Реализует простую сортировку вставками диапазона элементов 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator} & Iterator тип, удовлетворяющий Legacy\+Bidirectional\+Iterator и $\ast$\+Iterator должен быть Swappable \\
+\hline
+{\em Comparator} & тип, удовлетворяющий C++ named requirement Compare \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em begin,end} & итераторы, указывающие на диапазон, который требуется отсортировать \\
+\hline
+ & {\em cmp} & компаратор\+: возвращает {\ttfamily true}, если его первый аргумент должен стоять в отсортированном диапазоне строго левее второго, {\ttfamily false} иначе \\
+\hline
+\end{DoxyParams}
+\mbox{\label{namespacecustom_a3674d27126d026216fa61d44d573f493}} 
+\index{custom@{custom}!selection\_sort@{selection\_sort}}
+\index{selection\_sort@{selection\_sort}!custom@{custom}}
+\doxysubsubsection{selection\_sort()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Iterator $>$ \\
+void custom\+::selection\+\_\+sort (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end }\end{DoxyParamCaption})}
+
+Реализует сортировку выбором диапазона элементов 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator} & Iterator тип, удовлетворяющий Legacy\+Bidirectional\+Iterator и $\ast$\+Iterator должен быть Swappable \\
+\hline
+{\em Comparator} & тип, удовлетворяющий C++ named requirement Compare \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em begin,end} & итераторы, указывающие на диапазон, который требуется отсортировать \\
+\hline
+\end{DoxyParams}
+\mbox{\label{namespacecustom_a2d276acdceb9ed3eb692e8d75c46ec3f}} 
+\index{custom@{custom}!selection\_sort@{selection\_sort}}
+\index{selection\_sort@{selection\_sort}!custom@{custom}}
+\doxysubsubsection{selection\_sort()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Iterator , typename Comparator $>$ \\
+void custom\+::selection\+\_\+sort (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end,  }\item[{Comparator}]{cmp }\end{DoxyParamCaption})}
+
+Реализует сортировку выбором диапазона элементов 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator} & Iterator тип, удовлетворяющий Legacy\+Bidirectional\+Iterator и $\ast$\+Iterator должен быть Swappable \\
+\hline
+{\em Comparator} & тип, удовлетворяющий C++ named requirement Compare \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em begin,end} & итераторы, указывающие на диапазон, который требуется отсортировать \\
+\hline
+ & {\em cmp} & компаратор\+: возвращает {\ttfamily true}, если его первый аргумент должен стоять в отсортированном диапазоне строго левее второго, {\ttfamily false} иначе \\
+\hline
+\end{DoxyParams}
+\mbox{\label{namespacecustom_a01bd5c2142ed2249502871e2847a6865}} 
+\index{custom@{custom}!shaker\_sort@{shaker\_sort}}
+\index{shaker\_sort@{shaker\_sort}!custom@{custom}}
+\doxysubsubsection{shaker\_sort()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Iterator $>$ \\
+void custom\+::shaker\+\_\+sort (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end }\end{DoxyParamCaption})}
+
+Реализует шейкер-\/сортировку диапазона элементов 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator} & Iterator тип, удовлетворяющий Legacy\+Bidirectional\+Iterator и $\ast$\+Iterator должен быть Swappable \\
+\hline
+{\em Comparator} & тип, удовлетворяющий C++ named requirement Compare \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em begin,end} & итераторы, указывающие на диапазон, который требуется отсортировать \\
+\hline
+\end{DoxyParams}
+\mbox{\label{namespacecustom_a0113982f2114bc42da4de18722830666}} 
+\index{custom@{custom}!shaker\_sort@{shaker\_sort}}
+\index{shaker\_sort@{shaker\_sort}!custom@{custom}}
+\doxysubsubsection{shaker\_sort()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Iterator , typename Comparator $>$ \\
+void custom\+::shaker\+\_\+sort (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end,  }\item[{Comparator}]{cmp }\end{DoxyParamCaption})}
+
+Реализует шейкер-\/сортировку диапазона элементов 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator} & Iterator тип, удовлетворяющий Legacy\+Bidirectional\+Iterator и $\ast$\+Iterator должен быть Swappable \\
+\hline
+{\em Comparator} & тип, удовлетворяющий C++ named requirement Compare \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em begin,end} & итераторы, указывающие на диапазон, который требуется отсортировать \\
+\hline
+ & {\em cmp} & компаратор\+: возвращает {\ttfamily true}, если его первый аргумент должен стоять в отсортированном диапазоне строго левее второго, {\ttfamily false} иначе \\
+\hline
+\end{DoxyParams}

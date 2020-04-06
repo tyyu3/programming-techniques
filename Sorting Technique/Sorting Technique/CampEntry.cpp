@@ -1,4 +1,4 @@
-#include "CampEntry.hpp"
+﻿#include "CampEntry.hpp"
 #include <ostream>
 
 #include <utility>
@@ -32,7 +32,7 @@ bool operator>=(const CampEntry& lhs, const CampEntry& rhs)
 bool operator!=(const CampEntry& lhs, const CampEntry& rhs)
 {
     return !(lhs < rhs);
-}
+} 
 
 std::ostream& operator<<(std::ostream& stream, const CampEntry& entry)
 {

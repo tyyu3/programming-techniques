@@ -1,0 +1,221 @@
+\doxysection{Camp\+Entry Class Reference}
+\label{class_camp_entry}\index{CampEntry@{CampEntry}}
+
+
+Kласс, содержащий описание ребенка в детском лагере  
+
+
+
+
+{\ttfamily \#include $<$Camp\+Entry.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Bday}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \textbf{ Year} = int
+\item 
+using \textbf{ Troop} = int
+\item 
+using \textbf{ Shift} = int
+\item 
+using \textbf{ Name} = std\+::string
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Camp\+Entry} ()=delete
+\item 
+\textbf{ Camp\+Entry} (\textbf{ Year} \textbf{ year}, \textbf{ Troop} \textbf{ troop}, \textbf{ Shift} \textbf{ shift}, \textbf{ Name} \textbf{ name}, \textbf{ Bday} bday)
+\item 
+\textbf{ Camp\+Entry} (const \textbf{ Camp\+Entry} \&)=default
+\item 
+\textbf{ Camp\+Entry} \& \textbf{ operator=} (const \textbf{ Camp\+Entry} \&)=default
+\item 
+\textbf{ Camp\+Entry} (\textbf{ Camp\+Entry} \&\&)=default
+\item 
+\textbf{ Camp\+Entry} \& \textbf{ operator=} (\textbf{ Camp\+Entry} \&\&)=default
+\item 
+\textbf{ Year} \textbf{ year} () const
+\item 
+\textbf{ Troop} \textbf{ troop} () const
+\item 
+\textbf{ Shift} \textbf{ shift} () const
+\item 
+\textbf{ Name} \textbf{ name} () const
+\item 
+\textbf{ Bday} \textbf{ date} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ operator==} (const \textbf{ Camp\+Entry} \&lhs, const \textbf{ Camp\+Entry} \&rhs)
+\item 
+bool \textbf{ operator!=} (const \textbf{ Camp\+Entry} \&lhs, const \textbf{ Camp\+Entry} \&rhs)
+\item 
+bool \textbf{ operator$<$} (const \textbf{ Camp\+Entry} \&lhs, const \textbf{ Camp\+Entry} \&rhs)
+\item 
+bool \textbf{ operator$>$} (const \textbf{ Camp\+Entry} \&lhs, const \textbf{ Camp\+Entry} \&rhs)
+\item 
+bool \textbf{ operator$<$=} (const \textbf{ Camp\+Entry} \&lhs, const \textbf{ Camp\+Entry} \&rhs)
+\item 
+bool \textbf{ operator$>$=} (const \textbf{ Camp\+Entry} \&lhs, const \textbf{ Camp\+Entry} \&rhs)
+\item 
+std\+::ostream \& \textbf{ operator$<$$<$} (std\+::ostream \&stream, const \textbf{ Camp\+Entry} \&campentry)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kласс, содержащий описание ребенка в детском лагере 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\label{class_camp_entry_ad68841eeb967917f38cf633043cf947c}} 
+\index{CampEntry@{CampEntry}!Name@{Name}}
+\index{Name@{Name}!CampEntry@{CampEntry}}
+\doxysubsubsection{Name}
+{\footnotesize\ttfamily using \textbf{ Camp\+Entry\+::\+Name} =  std\+::string}
+
+\mbox{\label{class_camp_entry_a8501c81492052213e6caf3cc6f8fb68d}} 
+\index{CampEntry@{CampEntry}!Shift@{Shift}}
+\index{Shift@{Shift}!CampEntry@{CampEntry}}
+\doxysubsubsection{Shift}
+{\footnotesize\ttfamily using \textbf{ Camp\+Entry\+::\+Shift} =  int}
+
+\mbox{\label{class_camp_entry_a05c5003247d2832a9cbd10132a56e0d8}} 
+\index{CampEntry@{CampEntry}!Troop@{Troop}}
+\index{Troop@{Troop}!CampEntry@{CampEntry}}
+\doxysubsubsection{Troop}
+{\footnotesize\ttfamily using \textbf{ Camp\+Entry\+::\+Troop} =  int}
+
+\mbox{\label{class_camp_entry_aa079be008c1102620baad835691ea0f1}} 
+\index{CampEntry@{CampEntry}!Year@{Year}}
+\index{Year@{Year}!CampEntry@{CampEntry}}
+\doxysubsubsection{Year}
+{\footnotesize\ttfamily using \textbf{ Camp\+Entry\+::\+Year} =  int}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_camp_entry_a99d7893287a23f5d65600a5f3de3292a}} 
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\doxysubsubsection{CampEntry()\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Camp\+Entry\+::\+Camp\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\label{class_camp_entry_a4c99d67e147a920f51d29888b2276e9f}} 
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\doxysubsubsection{CampEntry()\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Camp\+Entry\+::\+Camp\+Entry (\begin{DoxyParamCaption}\item[{\textbf{ Year}}]{year,  }\item[{\textbf{ Troop}}]{troop,  }\item[{\textbf{ Shift}}]{shift,  }\item[{\textbf{ Name}}]{name,  }\item[{\textbf{ Bday}}]{bday }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_camp_entry_a03e35c5c7c5fd690b09a8643b493e221}} 
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\doxysubsubsection{CampEntry()\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Camp\+Entry\+::\+Camp\+Entry (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\label{class_camp_entry_a49ec696306dbd309aee1169f7b951b1b}} 
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\index{CampEntry@{CampEntry}!CampEntry@{CampEntry}}
+\doxysubsubsection{CampEntry()\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Camp\+Entry\+::\+Camp\+Entry (\begin{DoxyParamCaption}\item[{\textbf{ Camp\+Entry} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_camp_entry_af0a0231a472b26d80723a34636a23c86}} 
+\index{CampEntry@{CampEntry}!date@{date}}
+\index{date@{date}!CampEntry@{CampEntry}}
+\doxysubsubsection{date()}
+{\footnotesize\ttfamily \textbf{ Bday} Camp\+Entry\+::date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_camp_entry_ada33ae3529a4a98a452668d753c33e2f}} 
+\index{CampEntry@{CampEntry}!name@{name}}
+\index{name@{name}!CampEntry@{CampEntry}}
+\doxysubsubsection{name()}
+{\footnotesize\ttfamily \textbf{ Name} Camp\+Entry\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_camp_entry_a230c52b4086c9d50434a7640537b19ff}} 
+\index{CampEntry@{CampEntry}!operator=@{operator=}}
+\index{operator=@{operator=}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator=()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \textbf{ Camp\+Entry}\& Camp\+Entry\+::operator= (\begin{DoxyParamCaption}\item[{\textbf{ Camp\+Entry} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\label{class_camp_entry_aacffccbf6d8ec196e593681f2426b8ef}} 
+\index{CampEntry@{CampEntry}!operator=@{operator=}}
+\index{operator=@{operator=}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator=()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \textbf{ Camp\+Entry}\& Camp\+Entry\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\label{class_camp_entry_aa1af09326932c3972888d63cce75d4de}} 
+\index{CampEntry@{CampEntry}!shift@{shift}}
+\index{shift@{shift}!CampEntry@{CampEntry}}
+\doxysubsubsection{shift()}
+{\footnotesize\ttfamily \textbf{ Shift} Camp\+Entry\+::shift (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_camp_entry_a421416b512c33de285b532472f39fc16}} 
+\index{CampEntry@{CampEntry}!troop@{troop}}
+\index{troop@{troop}!CampEntry@{CampEntry}}
+\doxysubsubsection{troop()}
+{\footnotesize\ttfamily \textbf{ Troop} Camp\+Entry\+::troop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_camp_entry_a4ba50728a0f86668830b7104b4216a4b}} 
+\index{CampEntry@{CampEntry}!year@{year}}
+\index{year@{year}!CampEntry@{CampEntry}}
+\doxysubsubsection{year()}
+{\footnotesize\ttfamily \textbf{ Year} Camp\+Entry\+::year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\label{class_camp_entry_a8b1306964f9dcb8f5a1e208d4edd7cd9}} 
+\index{CampEntry@{CampEntry}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator"!=}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{lhs,  }\item[{const \textbf{ Camp\+Entry} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\label{class_camp_entry_afbb4a53786e2ac3f21f4cfcc89e449d3}} 
+\index{CampEntry@{CampEntry}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator$<$}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{lhs,  }\item[{const \textbf{ Camp\+Entry} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\label{class_camp_entry_a8d44bc19a6e1658d687c1834c4b12d65}} 
+\index{CampEntry@{CampEntry}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator$<$$<$}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \textbf{ Camp\+Entry} \&}]{campentry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\label{class_camp_entry_aab57b9f4609d13a31c8945bf869a99de}} 
+\index{CampEntry@{CampEntry}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator$<$=}
+{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{lhs,  }\item[{const \textbf{ Camp\+Entry} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\label{class_camp_entry_a948d0c3712a4b77cffb362b67dce9e23}} 
+\index{CampEntry@{CampEntry}!operator==@{operator==}}
+\index{operator==@{operator==}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator==}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{lhs,  }\item[{const \textbf{ Camp\+Entry} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\label{class_camp_entry_a1778c8bba41ef79fecfa9a7714535120}} 
+\index{CampEntry@{CampEntry}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator$>$}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{lhs,  }\item[{const \textbf{ Camp\+Entry} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\label{class_camp_entry_a8c181461647fd4150510be89dc522f96}} 
+\index{CampEntry@{CampEntry}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!CampEntry@{CampEntry}}
+\doxysubsubsection{operator$>$=}
+{\footnotesize\ttfamily bool operator$>$= (\begin{DoxyParamCaption}\item[{const \textbf{ Camp\+Entry} \&}]{lhs,  }\item[{const \textbf{ Camp\+Entry} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sorting Technique/\textbf{ Camp\+Entry.\+hpp}\end{DoxyCompactItemize}
