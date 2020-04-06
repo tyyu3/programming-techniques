@@ -10,7 +10,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <vector>
-
+#include <boost/math/distributions.hpp>
 namespace custom
 {
 /// Допустимые типы распределений
@@ -106,7 +106,8 @@ bool chi_squared_test(const std::vector<Number>& sample, Number min, Number max,
         exception_message << "Significance level " << significance_level << " is not in (0; 1) interval";
         throw std::invalid_argument(exception_message.str());
     }
-    auto [chi_squared_value, degrees_of_freedom] = chi_squared<Number>(sample, min, max, type);
-
+    auto chi = chi_squared<Number>(sample, min, max, type);
+    namespace bm = boost::math;
+    return (chi.first <= bm::quantile(bm::chi_squared_distribution<double>(chi.second), 1 - significance_level));
 }
 }
