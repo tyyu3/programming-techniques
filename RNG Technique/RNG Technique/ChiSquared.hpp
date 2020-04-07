@@ -59,14 +59,14 @@ std::pair<double, std::size_t> chi_squared(const std::vector<Number>& sample, Nu
     std::vector<double> probabilities_uniform(num_of_buckets);
     for (std::size_t i = 0; i < num_of_buckets - 1; ++i)
         probabilities_uniform[i] = (bucket_edges[i + 1] - bucket_edges[i]) / interval;
-    probabilities_uniform[num_of_buckets - 1] = (bucket_edges[num_of_buckets] - bucket_edges[num_of_buckets - 1] + add) / interval;
-    std::vector<double> probabilities_empirical(num_of_buckets);
+    probabilities_uniform[num_of_buckets - 1] = (bucket_edges[num_of_buckets] - bucket_edges[num_of_buckets - 1]) / interval;
+    std::vector<double> probabilities_empirical(num_of_buckets, 0);
     for (Number num : sample)
     {
         size_t position = std::upper_bound(bucket_edges.begin(), bucket_edges.end(), num) - bucket_edges.begin() - 1;
-        if (position == num_of_buckets && type == DistributionType::UNIFORM_INT && num == max)
+        if (position == num_of_buckets && type == DistributionType::UNIFORM_INT/* && num == max*/)
         {
-            ++probabilities_empirical[num_of_buckets];
+            ++probabilities_empirical[num_of_buckets-1];
             continue;
         }
         if (position == num_of_buckets)
@@ -108,6 +108,7 @@ bool chi_squared_test(const std::vector<Number>& sample, Number min, Number max,
     }
     auto chi = chi_squared<Number>(sample, min, max, type);
     namespace bm = boost::math;
-    return (chi.first <= bm::quantile(bm::chi_squared_distribution<double>(chi.second), 1 - significance_level));
+    auto qt = bm::quantile(bm::chi_squared_distribution<double>(chi.second), 1- significance_level);
+    return (chi.first <= qt);
 }
 }

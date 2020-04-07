@@ -30,9 +30,10 @@ namespace custom
 
     AdvancedPRNG::result_type AdvancedPRNG::operator()()
     {
-        inner_seed = (inner_seed >> 31) | (inner_seed << 13);
+        inner_seed = (inner_seed >> 3);
         inner_seed *= 41;
         inner_seed -= 31;
+        inner_seed += (inner_seed << 2);
         return inner_seed;
     }
 
