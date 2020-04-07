@@ -1,0 +1,125 @@
+Effortless PRNG LIMITS0 to 4294967295
+Advanced PRNG LIMITS0 to 4294967295
+Mersenne-Twister PRNG LIMITS0 to 4294967295
+effortless mean 0 2.14406e+09
+effortless variance     0 1.24405e+09
+effortless variability  0 0.580228
+effortless random       at 0.85  false
+effortless mean 1 2.14707e+09
+effortless variance     1 1.23421e+09
+effortless variability  1 0.574834
+effortless random       at 0.85  false
+effortless mean 2 2.14927e+09
+effortless variance     2 1.23709e+09
+effortless variability  2 0.575585
+effortless random       at 0.85  false
+effortless mean 3 2.11946e+09
+effortless variance     3 1.24359e+09
+effortless variability  3 0.586746
+effortless random       at 0.85  false
+effortless mean 4 2.1428e+09
+effortless variance     4 1.24756e+09
+effortless variability  4 0.58221
+effortless random       at 0.85  false
+effortless mean 5 2.16208e+09
+effortless variance     5 1.23043e+09
+effortless variability  5 0.569095
+effortless random       at 0.85  false
+effortless mean 6 2.14607e+09
+effortless variance     6 1.24126e+09
+effortless variability  6 0.578388
+effortless random       at 0.85  false
+effortless mean 7 2.14665e+09
+effortless variance     7 1.24436e+09
+effortless variability  7 0.579674
+effortless random       at 0.85  true
+effortless mean 8 2.15386e+09
+effortless variance     8 1.23884e+09
+effortless variability  8 0.575175
+effortless random       at 0.85  true
+effortless mean 9 2.16074e+09
+effortless variance     9 1.24249e+09
+effortless variability  9 0.575028
+effortless random       at 0.85  false
+
+advanced mean   0 2.13674e+09
+advanced variance       0 1.23234e+09
+advanced variability    0 0.576739
+advanced random         at 0.85  false
+advanced mean   1 2.14037e+09
+advanced variance       1 1.23717e+09
+advanced variability    1 0.578018
+advanced random         at 0.85  false
+advanced mean   2 2.13485e+09
+advanced variance       2 1.23351e+09
+advanced variability    2 0.577799
+advanced random         at 0.85  false
+advanced mean   3 2.13963e+09
+advanced variance       3 1.23417e+09
+advanced variability    3 0.576812
+advanced random         at 0.85  false
+advanced mean   4 2.13904e+09
+advanced variance       4 1.23381e+09
+advanced variability    4 0.576807
+advanced random         at 0.85  false
+advanced mean   5 2.13916e+09
+advanced variance       5 1.23626e+09
+advanced variability    5 0.577919
+advanced random         at 0.85  false
+advanced mean   6 2.13903e+09
+advanced variance       6 1.23688e+09
+advanced variability    6 0.578244
+advanced random         at 0.85  false
+advanced mean   7 2.13663e+09
+advanced variance       7 1.2347e+09
+advanced variability    7 0.577874
+advanced random         at 0.85  false
+advanced mean   8 2.13817e+09
+advanced variance       8 1.23304e+09
+advanced variability    8 0.57668
+advanced random         at 0.85  false
+advanced mean   9 2.14065e+09
+advanced variance       9 1.23425e+09
+advanced variability    9 0.576577
+advanced random         at 0.85  false
+
+mersenne-twister mean   0 2.14633e+09
+mersenne-twister variance       0 1.23907e+09
+mersenne-twister variability    0 0.577297
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   1 2.15404e+09
+mersenne-twister variance       1 1.23859e+09
+mersenne-twister variability    1 0.575006
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   2 2.14137e+09
+mersenne-twister variance       2 1.24052e+09
+mersenne-twister variability    2 0.579311
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   3 2.1375e+09
+mersenne-twister variance       3 1.24018e+09
+mersenne-twister variability    3 0.580199
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   4 2.14049e+09
+mersenne-twister variance       4 1.24284e+09
+mersenne-twister variability    4 0.580634
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   5 2.14111e+09
+mersenne-twister variance       5 1.23735e+09
+mersenne-twister variability    5 0.577904
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   6 2.14982e+09
+mersenne-twister variance       6 1.2423e+09
+mersenne-twister variability    6 0.577861
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   7 2.13527e+09
+mersenne-twister variance       7 1.23962e+09
+mersenne-twister variability    7 0.580542
+mersenne-twister random         at 0.85  true
+mersenne-twister mean   8 2.13702e+09
+mersenne-twister variance       8 1.24901e+09
+mersenne-twister variability    8 0.584461
+mersenne-twister random         at 0.85  false
+mersenne-twister mean   9 2.15418e+09
+mersenne-twister variance       9 1.23733e+09
+mersenne-twister variability    9 0.574384
+mersenne-twister random         at 0.85  true

@@ -87,7 +87,7 @@ int main()
         std::cout << "advanced mean\t" << i << ": " << custom::mean(a_samples[i]) << "\n";
         std::cout << "advanced variance\t" << i << ": " << custom::variance(a_samples[i]) << "\n";
         std::cout << "advanced variability\t" << i << ": " << custom::variability(a_samples[i]) << "\n";
-        std::cout << "effortless random?\t at " << significance << " : " << (custom::chi_squared_test(a_samples[i], aprng.min(), aprng.max(), 0.1, custom::DistributionType::UNIFORM_INT) ? "true" : "false") << "\n";
+        std::cout << "advanced random?\t at " << significance << " : " << (custom::chi_squared_test(a_samples[i], aprng.min(), aprng.max(), 0.1, custom::DistributionType::UNIFORM_INT) ? "true" : "false") << "\n";
     }
     std::cout << "\n";
     for (unsigned i = 0; i < 10; ++i)
@@ -95,7 +95,7 @@ int main()
         std::cout << "mersenne-twister mean\t" << i << ": " << custom::mean(mt_samples[i]) << "\n";
         std::cout << "mersenne-twister variance\t" << i << ": " << custom::variance(mt_samples[i]) << "\n";
         std::cout << "mersenne-twister variability\t" << i << ": " << custom::variability(mt_samples[i]) << "\n";
-        std::cout << "effortless random?\t at " << significance << " : " << (custom::chi_squared_test(mt_samples[i], mtprng.min(), mtprng.max(), 0.1, custom::DistributionType::UNIFORM_INT) ? "true" : "false") << "\n";
+        std::cout << "mersenne-twister random?\t at " << significance << " : " << (custom::chi_squared_test(mt_samples[i], mtprng.min(), mtprng.max(), 0.1, custom::DistributionType::UNIFORM_INT) ? "true" : "false") << "\n";
     }
 
     //timings
